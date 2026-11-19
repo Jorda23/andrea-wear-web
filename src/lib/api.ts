@@ -215,11 +215,13 @@ export async function fetchOrderByNumber(orderNumber: string, email?: string): P
 }
 
 export async function fetchOrdersAdmin(_adminCode: string): Promise<OrderWithItems[]> {
+  void _adminCode;
   const data = await request<unknown>('/api/admin/orders?page=1&pageSize=100');
   return unwrapList(data).map(mapOrderWithItems);
 }
 
 export async function fetchCustomersAdmin(_adminCode: string) {
+  void _adminCode;
   const data = await request<unknown>('/api/admin/customers?page=1&pageSize=100');
   return unwrapList(data).map((value): {
     id: string;
