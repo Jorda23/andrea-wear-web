@@ -2,6 +2,10 @@
 
 Andrea Wear is a fashion storefront built with Next.js, React, TypeScript, and MUI Material. The interface includes product browsing, category filters, product details, a cart, checkout, wishlists, order tracking, and an admin dashboard.
 
+## Live app
+
+🛍️ [Visit Andrea Wear](https://andreawear.netlify.app/)
+
 ## Requirements
 
 - Node.js
